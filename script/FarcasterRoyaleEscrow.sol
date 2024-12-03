@@ -14,7 +14,7 @@ contract CounterScript is Script {
 
     function run() public {
         vm.startBroadcast();
-
+    
         farcasterRoyaleEscrow = new FarcasterRoyaleEscrow(trustedSigner, baseMainnet_USDC);
 
         vm.stopBroadcast();
